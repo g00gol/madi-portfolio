@@ -1,0 +1,383 @@
+/*Site*/
+html {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+}
+body {
+	position: relative;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	background-color: white;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+/*Scrollbar*/
+::-webkit-scrollbar {
+	width: 4px;
+}
+::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background-color: rgba(0, 0, 0, 0);
+}
+::-webkit-scrollbar-thumb {
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background: rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+}
+
+/*Navigation*/
+.nav {
+	position: fixed;
+	width: 100%;
+	height: 50px;
+	top: 0;
+	display: inline-flex;
+	background-color: white;
+	transition: top 0.3s;
+	align-items: center;
+	justify-content: flex-end;
+	z-index: 2;
+}
+.nav .name {
+	position: relative;
+	width: 50%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.nav .links {
+	position: relative;
+	width: 50%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+.nav a {
+	display: inline-flex;
+	padding: 30px;
+	text-decoration: none;
+	color: black;
+	font-family: "Quicksand";
+	transition: 0.5s;
+}
+.nav a:hover {
+	color: #ffbf00;
+}
+
+/*Home*/
+.home {
+	position: relative;
+	width: 100%;
+	height: 200%;
+	display: flex;
+	justify-content: flex-start;
+	background-color: white;
+}
+.home .pic {
+	position: relative;
+	width: 50%;
+	height: 100%;
+	background-image: url(../images/pic.png);
+	background-attachment: fixed;
+	background-position: left;
+	background-size: 50%;
+	background-repeat: no-repeat;
+}
+.home .description {
+	position: relative;
+	width: 50%;
+	height: 100%;
+	background-color: white;
+}
+.home .description .welcome {
+	position: relative;
+	width: 100%;
+	height: 50%;
+	background-image: url(../images/yellow-bgd.PNG);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+.home .description .welcome .h1 {
+	position: relative;
+	color: white;
+	font-family: "Quicksand";
+	font-size: 50px;
+	padding: 200px 50px 25px 100px;
+}
+.home .description .welcome .p {
+	position: relative;
+	color: white;
+	font-family: "Quicksand";
+	font-size: 20px;
+	padding: 0 100px 50px 100px;
+}
+.home .description .welcome a {
+	width: fit-content;
+}
+.home .description .welcome a i {
+	font-size: 50px;
+	color: white;
+	animation-name: down-arrow;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in;
+	transition: margin-top 0.2s;
+}
+.home .description .more-info {
+	position: relative;
+	width: 100%;
+	height: 50%;
+	background-color: cadetblue;
+}
+.home .description a {
+	position: relative;
+	color: white;
+	font-family: "Quicksand";
+	font-size: 20px;
+	padding: 0 100px 50px 100px;
+}
+.home .description .more-info .h1 {
+	position: relative;
+	color: white;
+	font-family: "Quicksand";
+	font-size: 50px;
+	padding: 200px 50px 25px 100px;
+}
+.home .description .more-info .p {
+	position: relative;
+	color: white;
+	font-family: "Quicksand";
+	font-size: 20px;
+	padding: 0 100px 50px 100px;
+}
+.home .description .more-info a {
+	width: fit-content;
+	height: fit-content;
+	position: relative;
+	color: white;
+	font-family: "Quicksand";
+	font-size: 20px;
+	padding: 0 100px 50px 100px;
+}
+
+/*My Works*/
+.works {
+	position: relative;
+	width: auto;
+	height: 175%;
+}
+.works .works-title {
+	position: relative;
+	width: 100%;
+	height: 500px;
+	color: black;
+	font-family: "Quicksand";
+	text-align: center;
+}
+.works .works-title h1 {
+	margin: 0;
+	padding-top: 4%;
+	text-align: center;
+	font-size: 50px;
+}
+.works .works-title p {
+	margin: 3% 15%;
+	font-size: 25px;
+	color: gray;
+	text-align: left;
+}
+.works .works-title a {
+	width: auto;
+}
+.works .works-title a i {
+	font-size: 50px;
+	color: black;
+	animation-name: down-arrow;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in;
+	transition: margin-top 0.2s;
+}
+@keyframes down-arrow {
+	0% {
+		margin-top: 0;
+	}
+	50% {
+		margin-top: 10px;
+	}
+	100% {
+		margin-top: 0;
+	}
+}
+.works .project-cont {
+	position: relative;
+	width: 100%;
+	height: 65%;
+	display: inline-flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+}
+.works .project-cont .project {
+	position: relative;
+	width: 50%;
+	height: 50%;
+	display: flex;
+	background-position: center;
+	background-size: cover;
+}
+.works .project-cont .project .overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255, 255, 255, 0.4);
+	transition: background-color 1s;
+}
+.works .project-cont .project .overlay:hover {
+	background-color: rgba(255, 255, 255, 0.1);
+	cursor: pointer;
+}
+.works .project-cont .project .project-info {
+	width: fit-content;
+	height: fit-content;
+	font-family: "Quicksand";
+	padding: 0 5%;
+	z-index: 1;
+}
+.works .project-cont .project .project-info h1 {
+	font-size: 40px;
+}
+.works .project-cont .project .project-info p {
+	width: fit-content;
+	font-size: 20px;
+	color: gray;
+}
+
+/*Contact*/
+.contact {
+	position: relative;
+	width: 100%;
+	height: 200%;
+	margin-bottom: 20%;
+	background-color: white;
+}
+.contact .contact-title {
+	position: relative;
+	width: 100%;
+	height: 25%;
+	display: flex;
+	background-color: white;
+	color: black;
+	font-family: "Quicksand";
+	text-align: left;
+	align-items: center;
+}
+.contact .contact-title p {
+	margin: 15%;
+	font-size: 35px;
+	color: gray;
+}
+.contact .banner {
+	width: 100%;
+	height: 25%;
+	background-image: url(../images/banner.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+}
+.contact .contact-cont {
+	width: 70%;
+	height: fit-content;
+	margin: 10% 15%;
+	margin-bottom: 0;
+}
+.contact .contact-cont h1 {
+	width: 100%;
+	text-align: center;
+	font-family: "Quicksand";
+	font-size: 40px;
+	color: #ffbf00;
+}
+.contact .contact-cont .contact-info {
+	width: 100%;
+	height: fit-content;
+	margin-bottom: 10%;
+	text-align: center;
+}
+.contact .contact-cont .contact-info p {
+	font-family: "Quicksand";
+	font-size: 15px;
+}
+.contact .contact-cont .contact-info p i {
+	padding: 0 10px;
+	font-size: 20px;
+}
+.contact .contact-cont .contact-info .social-media {
+	width: fit-content;
+}
+.contact .contact-cont .contact-info .social-media a i {
+	width: fit-content;
+	height: fit-content;
+}
+.contact .contact-cont .contact-info .social-media i {
+	padding: 0 30px;
+	font-size: 25px;
+	color: gray;
+}
+.contact .contact-cont form {
+	width: 100%;
+	height: 30%;
+	display: block;
+	text-align: center;
+}
+.contact .contact-cont form input,
+textarea,
+button {
+	resize: none;
+	margin: 2% 5%;
+	width: 50%;
+	padding: 10px 20px;
+	border: none;
+	border-left: 1px gray solid;
+	outline: none;
+	font-family: "Quicksand";
+}
+.contact .contact-cont form input:focus,
+textarea:focus {
+	border-left: 1.5px #ffbf00 solid;
+}
+.contact .contact-cont form #text {
+	display: block;
+	width: 50%;
+	text-align: center;
+	font-family: "Quicksand";
+	font-size: 15px;
+}
+.contact .contact-cont form textarea {
+	padding: 0 20px 100px 20px;
+	height: 20px;
+}
+.contact .contact-cont form button {
+	border: none;
+	width: 20%;
+	cursor: pointer;
+}
+.contact .contact-cont form button:hover {
+	background-color: lightgray;
+}
+
+/*Footer*/
+.footer {
+	position: relative;
+	height: 40%;
+	width: 100%;
+	background-color: black;
+}
